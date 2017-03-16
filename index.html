@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="//cdn.rawgit.com/TeaMeow/TocasUI/master/dist/tocas.min.css">
+    <!-- 載入 jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <title>EMR Web</title>
 </head>
 <body>
-    <nav class="ts horizontally scrollable large fluid borderless pure basic menu">
-        <div class="ts narrow container">
-            <a href="/" class="item router-link-active">我是誰</a> 
-            <a href="" class="item">從這開始</a>
+    <div class="ts raised menu">
+    <a class="item">檔案</a>
+    <a class="item">編輯</a>
+    <a class="item">尋找</a>
+    <a class="item">檢視</a>
+    </div>
+    <div class="ts massive heading slate">
+    <span class="header">何愛馨</span>
+    <span class="description">俠女級人物</span>
+    </div>
+        <div class="ts segment">
+            <div class="ts three waterfall cards">
+            <div class="ts primary card">
+                <div class="content">
+                    <div class="header">風紀</div>
+                        <div class="description">
+                            中文涵意是風紀委員，
+                            這是用來驗證表單的 PHP 類別。
+                        </div>
+                    </div>
+                </div>
+                <div class="ts info card">
+                    <div class="content">
+                        <div class="header">夏希</div>
+                        <div class="description">
+                            夏希是一個基於 PHP 的時間類別，
+                            用以取得現在的時間，或者是數天後的現在時刻。
+                        </div>
+                    </div>
+                </div>
+                <div class="ts warning card">
+                    <div class="content">
+                        <div class="header">帝國</div>
+                        <div class="description">
+                            帝國是一個基於 PHP 的權限管理系統，
+                            建立一個帝國需要細心的規劃。
+                        </div>
+                    </div>    
+                </div>
+            </div>
         </div>
-    </nav>
-    <section id="components">
-        <div class="ts narrow container relaxed stackable grid">
-            <div class="sixteen wide column">
-
-            </div>
-            <div class="four wide column">
-
-            </div>
-            <div class="tewlve wide column">
-                <table class="ts inverted selectable table">
-                <thead>
-                    <tr>
-                        <th>工作區域</th>
-                        <th>目前狀態</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Safari</td>
-                        <td>已停止</td>
-                    </tr>
-                    <tr>
-                        <td>Isuka</td>
-                        <td>發生錯誤</td>
-                    </tr>
-                    <tr>
-                        <td>Karen</td>
-                        <td>尚未確認</td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-    
 </body>
 </html>
