@@ -5,48 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="//cdn.rawgit.com/TeaMeow/TocasUI/master/dist/tocas.min.css">
     <script type="text/javascript" src="tocas.js"></script>
-    <!-- 載入 jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
     <title>EMR Web</title>
 </head>
 <body>
     <div class="ts raised menu">
     <a class="item">檔案</a>
     <a class="item">編輯</a>
-    <a class="item">尋找</a>
-    <a class="item">檢視</a>
     </div>
     <div class="ts massive heading slate">
-    <span class="header">何愛馨</span>
-    <span class="description">俠女級人物</span>
+    <span class="header">何Ｘ玨</span>
+    <span class="description">VIP會員</span>
     </div>
         <div class="ts segment">
             <div class="ts three waterfall cards">
             <div class="ts primary card">
                 <div class="content">
-                    <div class="header">風紀</div>
+                    <div class="header">2017/02/27<br> 11:32:02</div>
                         <div class="description">
-                            中文涵意是風紀委員，
-                            這是用來驗證表單的 PHP 類別。
+                            臺大醫院<br>
+                            家醫科<br>
+                            賴一施<br>
                         </div>
                     </div>
                 </div>
                 <div class="ts info card">
                     <div class="content">
-                        <div class="header">夏希</div>
+                        <div class="header">2017/03/09<br> 09:34:12</div>
                         <div class="description">
-                            夏希是一個基於 PHP 的時間類別，
-                            用以取得現在的時間，或者是數天後的現在時刻。
+                            長庚醫院<br>
+                            腸胃科<br>
+                            林現充<br>
                         </div>
                     </div>
                 </div>
                 <div class="ts warning card">
                     <div class="content">
-                        <div class="header">帝國</div>
+                        <div class="header">2017/03/16<br> 10:50:54</div>
                         <div class="description">
-                            帝國是一個基於 PHP 的權限管理系統，
-                            建立一個帝國需要細心的規劃。
+                            國泰醫院<br>
+                            精神科<br>
+                            丁博齊<br>
                         </div>
                     </div>    
                 </div>
@@ -54,108 +52,28 @@
         </div>
         <br><br><br><br>
     <button class="ts button primary" id="test">TEST</button>
-    <button class="ts button warning" id="test2">TEST2</button>
-    <button class="ts button info" id="test3">TEST3</button>
-    <br><br><br><br>
-        <button class="ts button warning EMR">Record1</button>
-        <button class="ts button warning EMR">Record2</button>
-        <button class="ts button warning EMR">Record3</button>
-        <!--Test 1..dimmer....................................................................................................-->
+    
+    <!--Dialog 內容............................................................-->
     <div class="ts modals dimmer">
-        <dialog id="basicModal" class="ts basic modal" open>
-        <i class="close icon"></i>
-        <div class="ts icon header">
-            <i class="smile icon"></i>
-            您同意「合理使用條約」嗎
-        </div>
-        <div class="content">
-            <p>保障任何人的著作權，其中包括二次創作，二次創作僅可在原作者未聲明否決下進行發佈和創作，在未經原作允許下衍生任何具有原作之內容，基於衍生理念與內容為判決要點，
-    原作必須基於合理使用之理念提出移除、上訴任何非符合合理使用概念的衍生內容，合理使用的理念如下：使用目的及性質其著重點在於內容是否有所轉化，如衍生創作另有新意，非僅複製原作內容。版權作品性質以真實、事實所闡述之作品較虛構作品來的能夠符合合理使用。使用版權作品的多寡引用少量的原創著作比起引用大量來要的符合合理使用，但倘若原創著作成為衍生著作之核心內容，即使少量的原創著作被引用，也較不可能符合合理使用之原則。使用行為對於版權作品的市場或價值之影響透過原創著作的內容而進行獲利並造成原創著作部分損害，較不符合合理使用之原則。</p>
-        </div>
-        <div class="actions">
-            <button class="ts inverted basic deny button">
-                不
-            </button>
-            <button class="ts inverted basic positive button">
-                是的
-            </button>
-        </div>
-    </dialog>
-</div>
-
-<!--Test 2....closable..................................................................................................-->
-<div class="ts modals dimmer">
-    <dialog id="testModal" class="ts closable tiny modal">
-        <div class="content">
-            <p>點擊淡化幕也能夠關閉這個視窗，因為這是個 <span class="ts horizontal label">closable</span> 對話視窗。</p>
-        </div>
-        <div class="actions">
-            <button class="ts deny button">
-                不
-            </button>
-            <button class="ts positive button">
-                是的
-            </button>
-        </div>
-    </dialog>
-</div>
-<!--Test 3....closable..................................................................................................-->
-<div class="ts modals dimmer">
-    <dialog id="optionModal" class="ts modal">
-        <div class="header">
-            逼啪拉畢叭啦霹拉吧
-        </div>
-        <div class="content">
-            <p>到水的車風、天小望再，個院們著福！要清我個夫後於、說媽平神線連時該：光四報接。大親放書光？不議書組巴口保能近細，卻實到式石特約過。</p>
-            <p>代你是走是：路火改大兒地結後也傷車、明心沒教的童了共這英們點縣慢公早出光了得引多經！處技北夫們十是入就重得然親……法美機的義是小唱當解土量同吃，和樣做新機子他市很失吃出家。仍思老木海和部成是市的國兒生球要又辦中有對父色……形非帶海了。話安生當我球起。子立過財量展美義；那康自從遠飛心的一。</p>
-            <p>旅一的四課，開地還，的取理活數度青天化民家向的專自到及學，縣光自分個發：條越資大無庭；但進臺方隊的風斷此的小……一背書要西表靈：要藝太童汽也老天好住？兒沒生月路把時？不他謝、意強兩而一機，卻運持院是品的她腳。進和問半葉一所希知，景是育不、市音個在費我星國增成受呢來我子片易黃頭著，停可成人發才己金過位關長不一得主，好成引題於手魚，文指者價然、常首能國達另了石？且年養？好看了不、產行和越早反前門有，放轉國引環流的力是直算不福然。的館體後在利遠員我經現運懷況指正念像媽頭是中經！</p>
-        </div>
-        <div class="actions">
-            <button class="ts deny button">
-                不
-            </button>
-            <button class="ts positive button">
-                是的
-            </button>
-        </div>
-    </dialog>
-</div>
+        <dialog id="basicModal" class="ts closable tiny modal" open>
+            <div class="ts icon header">
+                <i class="smile icon"></i>
+                詳細資訊
+            </div>
+            <div class="content">
+                <p>
+                    Diagnosis : A15.0 Tuberculosis of lung 肺結核 註記1,J11.08 Influenza due to unidentified influenza virus with specified pneumonia 未確認流感病毒所致流行性感冒併明示類型肺炎 註記2,stable now and no complaint，report normal home BP；,ever increased BP noted for weeks，no DOE，no chest pain，no syncope；,no PND，no orthopnea,BP：148/70 mmHg， HR：66/min,PE：pale conjunctiva-，icteric sclera-； JVE- ， carotid bruits-，goiter-；clear bs，no rales，no wheezing；RHB，soft SM，Peripheral pulses：++，pitting edema-,Previous CXR：no cardiomegaly,HCVD
+                </p>
+            </div>
+            <div class="actions">
+                <button class="ts inverted basic positive button">確定</button>
+            </div>
+        </dialog>
+    </div>
 </body>
 <script>
-    //ts('#basicModal').modal("show");
     ts("#test").on("click", function() {
         ts('#basicModal').modal("show");
-    });
-
-    ts("#test2").on("click", function() {
-        ts('#testModal').modal("show");
-    });
-
-    ts("#test3").on("click", function() {
-        ts('#optionModal').modal({
-            approve: '.positive, .approve, .ok',
-            deny  : '.negative, .deny, .cancel',
-            onDeny: function() {
-                alert("你一定要同意才行！");
-                return false
-            },
-            onApprove: function() {
-                alert("太好了！")
-            }
-        }).modal("show")
-    });
-    ts(".EMR").on("click", function() {
-        ts('#testModal').modal({
-            approve: '.positive, .approve, .ok',
-            deny  : '.negative, .deny, .cancel',
-            onDeny: function() {
-                alert("你一定要同意才行！");
-                return false
-            },
-            onApprove: function() {
-                alert("太好了！")
-            }
-        }).modal("show")
     });
 </script>
 </html>
