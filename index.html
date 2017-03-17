@@ -8,51 +8,43 @@
     <title>EMR Web</title>
 </head>
 <body>
+    <!--Nav 導覽列測試 ............................................................-->
     <div class="ts raised menu">
     <a class="item">檔案</a>
     <a class="item">編輯</a>
     </div>
+    <!--頁岩 測試 ............................................................-->
     <div class="ts massive heading slate">
     <span class="header">何Ｘ玨</span>
     <span class="description">VIP會員</span>
     </div>
-        <div class="ts segment">
-            <div class="ts three waterfall cards">
-            <div class="ts primary card">
-                <div class="content">
-                    <div class="header">2017/02/27<br> 11:32:02</div>
-                        <div class="description">
-                            臺大醫院<br>
-                            家醫科<br>
-                            賴一施<br>
-                        </div>
-                    </div>
-                </div>
-                <div class="ts info card">
-                    <div class="content">
-                        <div class="header">2017/03/09<br> 09:34:12</div>
-                        <div class="description">
-                            長庚醫院<br>
-                            腸胃科<br>
-                            林現充<br>
-                        </div>
-                    </div>
-                </div>
-                <div class="ts warning card">
-                    <div class="content">
-                        <div class="header">2017/03/16<br> 10:50:54</div>
-                        <div class="description">
-                            國泰醫院<br>
-                            精神科<br>
-                            丁博齊<br>
-                        </div>
-                    </div>    
+    <!--卡片 測試 ............................................................-->
+    <div class="ts four stackable cards">
+        <a class="ts raised card">
+            <div class="content">
+                <div class="header">2017/02/27<br> 11:32:02</div>
+                <div class="description">
+                    臺大醫院<br>家醫科<br>賴一施
                 </div>
             </div>
-        </div>
-        <br><br><br><br>
-    <button class="ts button primary" id="test">TEST</button>
-    
+        </a>
+        <a class="ts raised card">
+            <div class="content">
+                <div class="header">2017/03/09<br> 09:34:12</div>
+                <div class="description">
+                    長庚醫院<br>腸胃科<br>林現充
+                </div>
+            </div>
+        </a>
+        <a class="ts raised card">
+            <div class="content">
+                <div class="header">2017/03/16<br> 10:50:54</div>
+                <div class="description">
+                    國泰醫院<br>精神科<br>丁博齊
+                </div>
+            </div>    
+        </a>     
+    </div>    
     <!--Dialog 內容............................................................-->
     <div class="ts modals dimmer">
         <dialog id="basicModal" class="ts closable large modal" open>
@@ -108,7 +100,7 @@
     </div>
 </body>
 <script>
-    ts("#test").on("click", function() {
+    ts(".card").on("click", function() {
         ts('#basicModal').modal("show");
     });
 </script>
