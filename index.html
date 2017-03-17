@@ -46,9 +46,146 @@
             </div>    
         </a>     
     </div>    
-    <!--Dialog 內容............................................................-->
+    <!--Medication Dialog 內容............................................................-->
     <div class="ts modals dimmer">
         <dialog id="basicModal" class="ts closable large modal" open>
+            <div class="ts icon header">
+                <i class="smile icon"></i>
+                用藥資訊
+            </div>
+            <div class="content">
+                <p>
+                    <table class="ts sortable collapsing celled table">
+                        <thead>
+                            <tr>
+                                <th>項次</th>
+                                <th>處方箋種類註記</th>
+                                <th>藥品代碼</th>
+                                <th>藥品商品名稱</th>
+                                <th>藥品學名</th>
+                                <th>劑型</th>
+                                <th>劑量</th>
+                                <th>劑量單位</th>
+                                <th>頻率</th>
+                                <th>給藥途徑</th>
+                                <th>給藥日數</th>
+                                <th>給藥總量</th>
+                                <th>給藥總量單位</th>
+                                <th>實際給藥總量</th>
+                                <th>實際給藥總量單位</th>
+                                <th>磨粉註記</th>
+                                <th>註記</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>GENRL</td>
+                                <td>A040130100</td>
+                                <td>TINTEN TABLETS 500MG</td>
+                                <td>ACETAMINOPHEN TAB 500MG (FOIL)</td>
+                                <td>錠劑</td>
+                                <td>1</td>
+                                <td>錠</td>
+                                <td>每天三次飯後(TID PC)</td>
+                                <td>口服</td>
+                                <td>4</td>
+                                <td>12</td>
+                                <td>錠</td>
+                                <td>12</td>
+                                <td>錠</td>
+                                <td>N</td>
+                                <td>力停疼錠500公絲</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>GENRL</td>
+                                <td>A030862157</td>
+                                <td>COUGH MIXTURE </td>
+                                <td>PLATYCODON FLUID EXTRACT 20ML SOD CITRATE 1G/100ML 120ML/BTL</td>
+                                <td>內服液劑</td>
+                                <td>10</td>
+                                <td>CC</td>
+                                <td>需要時使用(PRN)</td>
+                                <td>口服</td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>瓶</td>
+                                <td>1</td>
+                                <td>瓶</td>
+                                <td>N</td>
+                                <td>鎮咳祛痰液</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>GENRL</td>
+                                <td>A042687100</td>
+                                <td>REGROW SUSTAINED RELEASE F.C. TABLET 60MG \"T.T.Y.\" </td>
+                                <td>DEXTROMETHOPHAN HBR 60MG/TAB</td>
+                                <td>持續性膜衣錠劑</td>
+                                <td>1</td>
+                                <td>錠</td>
+                                <td>睡前使用(HS)</td>
+                                <td>口服</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>錠</td>
+                                <td>5</td>
+                                <td>錠</td>
+                                <td>N</td>
+                                <td>愛舒可羅持續性膜衣錠60公絲</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>GENRL</td>
+                                <td>A0284531G0</td>
+                                <td>MUCOSOLVAN TABLETS 30MG</td>
+                                <td>AMBROXOL 30MG TAB</td>
+                                <td>錠劑</td>
+                                <td>1</td>
+                                <td>錠</td>
+                                <td>每天三次(TID)</td>
+                                <td>口服</td>
+                                <td>5</td>
+                                <td>15</td>
+                                <td>錠</td>
+                                <td>15</td>
+                                <td>錠</td>
+                                <td>N</td>
+                                <td>沐舒痰錠30公絲</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>GENRL</td>
+                                <td>B023792100</td>
+                                <td>XYZAL FILM-COATED TABLETS 5MG</td>
+                                <td>LEVOCETIRIZINE 5MG/TAB</td>
+                                <td>膜衣錠</td>
+                                <td>1</td>
+                                <td>錠</td>
+                                <td>每天一次(QD)</td>
+                                <td>口服</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>錠</td>
+                                <td>5</td>
+                                <td>錠</td>
+                                <td>N</td>
+                                <td>驅異樂膜衣錠5公絲</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+            <div class="actions">
+                <button class="ts inverted basic info button" id="detailBtn">詳細資訊</button>
+                <button class="ts inverted basic positive button">確定</button>
+            </div>
+        </dialog>
+    </div>
+    <!--Procedure & Diagnosis Dialog 內容............................................................-->
+    <div class="ts modals dimmer">
+        <dialog id="detailModal" class="ts closable large modal" open>
             <div class="ts icon header">
                 <i class="smile icon"></i>
                 詳細資訊
@@ -133,15 +270,21 @@
                 確定
             </button>
         </div>
-    </dialog>
+        </dialog>
     </div>
 </body>
 <script>
+    //Triggle 登入
     ts("#login").on("click", function() {
         ts('#loginModal').modal("show");
     });
+    //Triggle 卡片 用藥資訊
     ts(".card").on("click", function() {
         ts('#basicModal').modal("show");
+    });
+    //Triggle 卡片 詳細資訊
+    ts("#detailBtn").on("click", function() {
+        ts('#detailModal').modal("show");
     });
 </script>
 </html>
